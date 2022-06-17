@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="/css/receiptReportStyle.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <section class="section">
+
+
+        <div class="header">
+            <img class="logo-img" src="/img/Imagem2.gif" />
+
+            <h3>Recibo</h3>
+        </div>
+
+        <div class="div-text">
+
+
+            <p> O(A), Vendedor(a) Tiago Apolônio de melo, CPF Nº 099.570.324-88 recebe do(a)
+                Comprador(a) <strong>
+                    <u>
+                        <%= receiptReport.clientName %>
+                    </u>
+                </strong> , CPF Nº <strong>
+                    <%= receiptReport.cpf %>
+                </strong> nesta data, a importância de
+                R$ (
+                <%= receiptReport.salePrice %>),
+                    ( <strong>
+                        <u>
+                            <%= receiptReport.description %>
+                        </u>
+                    </strong>),
+                    <br /> qual foi paga em ( ) dinheiro ou ( ) cartão.
+                    <br /> O presente recibo reporta-se à compra do aparelho
+                    celular de IMEI Nº <strong>
+                        <u>
+                            <%= receiptReport.imei %>
+                        </u>
+                    </strong>
+
+                    Nestes termos o Vendedor da plena e geral quitação ao Comprador quanto ao pagamento do celular
+                    negociado.
+                    ficando ainda por este responsável. nos termos da garantia, estando ciente o(a)Comprador(a) de todas
+                    as
+                    características e especificações. bem como recebendo neste ato o termo de garantia emitido pelo(a)
+                    Vendedor(a).
+                    cujas orientações de perda de garantia estão expressas
+
+            </p>
+
+
+
+
+        </div>
+
+        <p class="txt-data">
+
+            Recife - PE, dia ___/___/___
+
+        </p>
+
+        <div class="div" id="divComprador">
+            <span>
+                ______________________________________
+            </span>
+            <div> COMPRADOR </div>
+        </div>
+
+        <div class="div" id="divVendedor">
+
+            <span>
+
+                _______________________________________
+
+            </span>
+            <div> VENDEDOR </div>
+        </div>
+
+
+
+
+
+    </section>
+
+
+</body>
+
+</html>
